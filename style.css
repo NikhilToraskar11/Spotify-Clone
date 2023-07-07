@@ -66,7 +66,11 @@ nav ul li{
     color: white;
     flex-direction: column;
 }
-
+
+.icon{
+    margin: 14px;
+}
+
 .icons i{
     cursor: pointer;
 }
