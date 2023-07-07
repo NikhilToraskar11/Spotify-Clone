@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify -  Your Favourite Music is Here</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="images/logo.png" alt="Spotify">Spotify</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Enjoy Your Favourite Music</h1>
+            <div class="songItemContainer">
+                <div class="songItem">                  
+                    <img src="covers/1.jpg" alt="1">
+                    <span class="songName">Starboy - The Weekend</span>
+                    <span class="songListPlay"><span class="timestamp"><i  id="0" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="covers/2.jpg" alt="1">
+                    <span class="songName">Blinding Lights - The Weekend</span>
+                    <span class="songListPlay"><span class="timestamp"><i id="1" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="covers/3.jpg" alt="1">
+                    <span class="songName">Reminder - The Weekend</span>
+                    <span class="songListPlay"><span class="timestamp"><i id="2" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="covers/4.jpg" alt="1">
+                    <span class="songName">Attention - Charlie Puth</span>
+                    <span class="songListPlay"><span class="timestamp"><i id="3" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="covers/5.jpg" alt="1">
+                    <span class="songName">Thats What I Like - Bruno Mars</span>
+                    <span class="songListPlay"><span class="timestamp"><i id="4" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="covers/6.jpg" alt="1">
+                    <span class="songName">4 Din - MC Square</span>
+                    <span class="songListPlay"><span class="timestamp"><i id="5" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="covers/7.jpg" alt="1">
+                    <span class="songName" id="7">Tu Har Lamha - Arijit Singh</span>
+                    <span class="songListPlay"><span class="timestamp"><i id="6" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/8.jpg" alt="1">
+                    <span class="songName">Hale Dil -Harshit Saxsena</span>
+                    <span class="songListPlay"><span class="timestamp"><i id="7" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="covers/9.jpg" alt="1">
+                    <span class="songName">Tera Zikr - Darshan Raval</span>
+                    <span class="songListPlay"><span class="timestamp"><i id="8" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="covers/10.jpg" alt="1">
+                    <span class="songName">Kina Chir - The PropheC</span>
+                    <span class="songListPlay"><span class="timestamp"><i id="9" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+            </div>
+        </div>  
+    </div>      
+
+    <div class="songBanner"></div>
+        <div class="bottom">
+            <div class="songInfo">
+                <img src="images/playing.gif" width="42px" alt="" id="gif"><span id="masterSongName">Starboy - The Weekend</span>
+            </div>
+
+            <input type="range" name="range" id="myProgressBar" min="0" max="100" value="0">
+                <div class="icons">
+                    <!-- fontawesome icons -->
+                    <i class="fas fa-3x fa-step-backward" id="previous"></i>
+                    <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+                    <i class="fas fa-3x fa-step-forward" id="next"></i>
+                </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a18aff39c7.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
