@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    width: 45px;
+    padding: 0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 70vh;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+}
+
+.songList{
+    margin: auto;
+    text-align: center;
+}
+
+.bottom{
+    position: sticky;
+    height: 150px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    position: sticky;
+}
+
+.icons{
+    margin-top: 14px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+#previous{
+    padding: 0px 10px;
+}
+
+#masterPlay{
+    padding: 0px 10px;
+}
+
+#next{
+    padding: 0px 10px;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.songItemContainer{
+    margin-top: 74px;  
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    font-size: large;
+    margin-top: 10px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.1s ease-in;
+}
+
+
+@media only screen and (max-width: 830px){
+    .container{
+        flex-direction: column;
+    }
+
+    .songItem img{
+        display: flex;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .songInfo{
+        font-size: small;
+    }
+
+    .songInfo img{
+        flex-direction: column-reverse;
+    }
+
+    .icons{
+        font-size: 10px;
+        padding-top: 10px;
+    }
+
+    .masterSongName{
+        padding-left: 37px;
+    }
+}
+
+@media only screen and (max-width: 530px){
+    .songName{
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 280px){
+    .songName{
+        font-size: small;
+    }
+     
+    .songItem{
+        height: 150px;
+    }
+}
